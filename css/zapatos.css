@@ -1,0 +1,75 @@
+/*
+colores
+verde: #3a690c
+azul: #3291da;
+
+*/
+
+.Zap{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex; /* Afecto a los hijos directos */
+    padding-top: 25px;
+}
+
+.Nike{
+	margin: 30px;
+
+}
+
+.descripcion-zap{
+    font-size: 20px;
+    padding-right: 80px;
+}
+
+.title-zap{
+    font-size: 30px;
+    color:  #3a690c;
+}
+
+.precio-zap{
+    color: #3291da;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.Agre button{
+	background-color: blue;
+    color: white;
+    padding: 12px;
+    padding-right: 0;
+    padding-left: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+
+
+.dropdown-title{
+    display: inline;
+    font-size: 23px;
+}
+
+.dropdown-select{
+    display: inline;
+    width: 70px;
+    height: 22px;
+}
+
+.dropdown-select:hover,
+.dropdown-select:active{
+    outline: none;
+}
+
+
+
+.dropdown-title-color{
+    margin-left: 40px;
+}
+
+
+

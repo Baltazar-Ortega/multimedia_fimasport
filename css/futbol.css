@@ -1,0 +1,160 @@
+/*
+colores
+verde: #3a690c;
+azul: #3291da;
+
+*/
+
+
+.productos{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex; /* Afecto a los hijos directos */
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.producto2{
+
+    margin-right: 100px;
+
+}
+
+.producto1{
+	margin-right: 100px;
+	margin-left: 120px;
+}
+
+.producto3{
+	margin-right: 150px;
+
+
+}
+
+.productos p{
+	margin:0;
+	display: inline;
+}
+
+.productos button{
+	display: block;
+}
+
+.futProd{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	color: black;
+	font-size: 25px;
+}
+
+.futProd strong{
+	margin-right: 12px;
+	margin-left: 4px;
+	
+	color: #3291da;
+	font-weight: bold;
+	text-decoration: line-through;
+}
+
+.Novedad{
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.Fondo{
+	background-image: url('../images/Futbol/Fondo.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: -350px;
+}
+
+.h2{
+    width: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: blue;
+    font-size: 70px;
+    -webkit-box-pack: space-top;
+        -ms-flex-pack: space-top;
+            justify-content: space-top;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+.hym-title{
+	margin-left: 30px;
+	color: #3a690c;
+}
+
+.hym-title strong{
+	color: #3291da;
+	
+}
+
+/*<h1 {
+	color: pink;n
+	text-transform: line-through;
+}*/
+
+.MAS{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 70px;
+	letter-spacing: 3px;
+	font-size: 50px;
+	color: #3a690c;
+}
+
+.MAS strong{
+	color: #3291da;
+}
+
+.Novedad{
+	margin-top: 50px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex; /* Afecto a los hijos directos */
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.Messi{
+	margin-top: 50px;
+	margin-right: 170px;
+	margin-bottom: 70px;
+}
+.Compra h1{
+	font-size: 40px;
+}
+
+.precio-messi{
+	font-size: 40px;
+	letter-spacing: 2px;
+	color: #3291da;
+}
+
+

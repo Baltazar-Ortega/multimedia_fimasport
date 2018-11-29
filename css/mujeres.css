@@ -1,0 +1,33 @@
+/*
+colores
+verde: #3a690c;
+azul: #3291da;
+
+*/
+
+.bannermujer img{
+    width: 99vw;
+    
+}
+
+.mujeres-title{
+    letter-spacing: 1.5px;
+    font-size: 38px;
+    text-align: center;
+}
+
+.muj-masnuevo{
+    color: #3291da;
+}
+
+.muj-masvendido{
+    color: #3a690c;
+    margin-top: 70px;
+    
+}
+
+.img-prod{
+    border: 1px solid pink;
+}
+
+

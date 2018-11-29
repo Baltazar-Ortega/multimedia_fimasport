@@ -1,0 +1,84 @@
+/*
+colores
+verde: #3a690c
+azul: #3291da;
+
+*/
+
+.mas_ven_nue_title{
+    letter-spacing: 1.5px;
+    font-size: 38px;
+    text-align: center;
+}
+
+.mas_ven_nue_container{
+    margin-top: 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.mas_ven_nue_prodcontainer{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+}
+
+.mas_ven_nue-prodtitle{
+    text-align: center;
+    font-size: 24px;
+}
+
+.mas_ven_nue-price1,
+.mas_ven_nue-price2{
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1.7px;
+    margin-top: 0;
+}
+
+
+.mas_ven_nue-price2{
+    color: #3a690c;
+}
+
+.mas_ven_nue-price1{
+    color: #3291da;
+}
+
+.mas_ven_nue-price1 strong{
+    color: #3a690c;
+}
+
+.mas_ven_nue-price2 strong{
+     color: #3291da;
+}
+
+
+.img-prod{
+    border: 1px solid blue;
+}
+
+
+
+
+
+
+
+
+

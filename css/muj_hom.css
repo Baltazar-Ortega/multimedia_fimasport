@@ -1,0 +1,63 @@
+
+.nuevoyvendido-container{
+    margin-top: 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.mujhom-prod-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+}
+
+.mujhom-prod-price1,
+.mujhom-prod-price2{
+    
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1.7px;
+    margin-top: 0;
+}
+
+.mujhom-prod-price2{
+    color: #3a690c;
+}
+
+.mujhom-prod-price1{
+    color: #3291da;
+}
+
+.mujhom-prod-price1 strong{
+    color: #3a690c;
+}
+
+.mujhom-prod-price2 strong{
+     color: #3291da;
+}
+
+
+.img-prod{
+    border: 1px solid blue;
+}
+
+.mujhom-prod-title{
+    text-align: center;
+    font-size: 24px;
+}

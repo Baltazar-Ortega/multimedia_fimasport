@@ -1,0 +1,577 @@
+/*
+colores
+verde: #3a690c
+azul: #3291da;
+
+*/
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure{
+    margin: 0;
+    display: inline;
+}
+
+/* HEADER */
+
+.header {
+    /*height: 400px;*/
+    /*width: 100vw;*/
+}
+
+.header-1{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: inherit;
+}
+
+.header-1 figure{
+    margin-left: 10px;
+}
+
+.header-1 h1{
+    display: inline-block;
+    margin-right: 150px;
+    font-size: 50px;
+    color: #3291da;
+}
+
+.header h1 strong{
+    color: #3a690c;
+}
+
+.header-1 a input {
+    height: 40px;
+    width: 300px;
+}
+
+.header-1 i{
+    font-size: 32px; 
+}
+
+.fas.fa-map-marker-alt{
+    color: red;
+    margin-left:90px;
+}
+
+.fa.fa-shopping-cart,
+.fa.fa-user
+{
+    margin-right: 27px;
+    color: #3a690c;
+    cursor: pointer;
+}
+
+
+
+.fas.fa-search{
+    margin-left: 25px;
+    color: #3a690c;
+}
+
+.header-1-input{
+    margin-right: 20px;
+}
+
+.header-2{
+    font-size: 25px;
+}
+
+.menu{
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.header-2 ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: #3a690c;
+}
+
+.header-2 ul li{
+    display: inline-block;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.link1{
+    margin-left: 10px;
+}
+
+.link-blog{
+    margin-right: 20px;
+    margin-left: 350px;
+    color: #b22222;
+    font-weight: bold;
+}
+
+.header-3{
+    background: black;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 30px;
+    margin: 0;
+}
+
+.ad-title{
+    display: inline;
+    margin: 0 10px;
+}
+
+.ad-link{
+    display: inline;
+}
+
+.container{
+    /*border: 1px solid red;*/
+    width: 1200px;
+    margin: 0 auto;
+    display: inherit;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
+    height: inherit;
+    -ms-flex-wrap: inherit;
+        flex-wrap: inherit;
+}
+
+/* hombres y mujeres */
+
+.hym{
+    margin-top: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
+}
+
+.h{
+    height: 250px;
+    width: 520px;
+    background-image: url('../images/main/hombres.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.h-detail{
+    width: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.h-detail h3{
+    font-size: 30px;
+}
+
+.h-detail button{
+    background-color: orange;
+    color: white;
+    padding: 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.m{
+    height: 250px;
+    width: 520px;
+    background-image: url('../images/main/mujeres.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.m .h-detail{
+    color: grey;
+}
+
+/* CARTAS */
+.cartas{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 30px;
+    padding-bottom: 5px;
+    margin: 50px auto;
+    margin-bottom: 0;
+}
+
+.cartas-text{
+    color: #3291da;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 0;
+    height: 250px;
+}
+
+.carta{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 250px;
+    height: 280px;
+}
+
+/* Lo mas nuevo y lo mas vendido */
+
+.N-V{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 70px;
+}
+
+.n-v-title{
+    color: #3a690c;
+    font-size: 30px;
+}
+
+.n-v-precio{
+    
+    color: #5F5F5F;
+}
+
+.n-v-container,
+.n-v-container figure
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 30px;
+}
+
+.n-v-product-title{
+    margin: 0;
+}
+
+/* REBAJAS */
+.rebajas{
+    margin-bottom: 90px;
+}
+
+.box{
+    background-color: red; 
+    border: 1px solid black; 
+    height: 260px; 
+    width: 800px;
+    margin: 0 auto;
+    background-image: url('../images/main/rebajas.jpg');
+    background-size: cover;
+}
+
+.red-box{
+    background: rgba(255, 0, 0, 0.5);
+    height: 260px; 
+    width: 800px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    
+}
+
+.inner-box{
+    position: absolute;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid white; 
+    height: 220px; 
+    width: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    opacity: 1;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.rebajas-btn{
+    padding: 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.rebajas-title{
+    margin-bottom: 60px;
+    margin-top: 2px;
+    font-size: 35px;
+}
+
+/* Marcas */
+.marcas-title{
+    text-align: center;
+    font-size: 33px;
+    color: #3a690c;
+}
+
+.marcas-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    
+}
+
+/* Newsletter */
+.newsletter{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.news-title{
+    font-size: 25px;
+    color: #3291da;
+    margin-right: 50px;
+}
+
+.newsletter input{
+    height: 40px;
+    width: 300px;
+}
+
+.newsletter img{
+    margin-right: 35px;
+}
+
+/* Footer */
+
+.footer{
+    background-color: lightgrey;
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.footer-col1{
+    margin-right: 80px;
+    margin-top: 15px;
+}
+
+.footer-title{
+    display: inline;
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 20px;
+    
+}
+
+.soporte-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 17px;
+}
+
+.spt-cont{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.spt-cont2{
+    text-align: right;
+}
+
+.contacto-title{
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.social-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+.social-container i{
+    margin-left: 20px;
+    margin-right: 22px;
+}
+
+.contacto-tel{
+    font-size: 18px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.contacto2{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.metodos-title{
+    text-align: center;
+    font-size: 20px;
+}
+
+.metodos-container{
+    margin-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+.final-footer{
+    background-color: black; 
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.final-text{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+.BannerHombres img{
+    width: 99vw;
+}
+
+.hombres-title{
+    letter-spacing: 1.5px;
+    font-size: 38px;
+    text-align: center;
+}
+
+.hom-masnuevo{
+    color: #3291da;
+}
+
+.hom-masvendido{
+    color: #3a690c;
+    margin-top: 70px;
+}

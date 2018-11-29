@@ -1,0 +1,147 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Carrito - Articulos deportivos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Local stylesheets-->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/carrito.css">
+
+    <!--CDN ICONS-->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+
+
+
+
+    <!--SLIDER-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider();
+        });
+    </script>
+</head>
+<body>
+
+
+    <header class="header">
+        <div class="container">
+            <div class="header-1">
+                <!-- Parte superior-->
+                <figure class="logo">
+                    <img src="../images/LOGO.jpg" alt="logo" width="100">
+                </figure>
+                <a href="../index.html">
+                    <h1 id="fimasport"><strong>F</strong>ima<strong>S</strong>port</h1>
+                </a>
+                <a href="./ubicacion.html" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                <i class="fas fa-search"></i>
+                <a class="header-1-input" href="./busqueda.html"><input type="text" placeholder="Nike" style="border-radius: 5px;"></a>
+                <a href="./sesion.html" target="_blank"><i class="fa fa-user"></i></a>
+                <a href="./carrito.html"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+    
+            <div class="header-2">
+                <!--Secciones principales-->
+                <nav class="menu">
+                    <ul>
+                        <li class="link1">
+                            <a class="link" href="./futbol.html" target="_blank"><strong style="color: #3291da;">F</strong>utbol</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#"><strong style="color: #3291da;">A</strong>mericano</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#"><strong style="color: #3291da;">B</strong>asquetbol</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#"><strong style="color: #3291da;">A</strong>tletismo</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#"><strong style="color: #3291da;">O</strong>tros</a>
+                        </li>
+                        <li>
+                            <a class="link link-blog" href="./blog.html" target="_blank">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    
+        <div class="header-3">
+            <h4 class="ad-title">Hasta 12 meses sin intereses en tarjetas participantes</h4>
+            <p class="ad-link">Ver mas</p>
+        </div>
+    
+    
+    </header>
+        
+    <div class="Mi">
+             <h1><strong>M</strong>i <strong>C</strong>arrito.
+             </h1>
+        </div>
+
+        <p class="cantArt">2 Articulos</p>
+   
+        <div class="Articulos">
+            <div class="producto-carrito producto-carrito1">
+                <img src="../images/carrito/brazil.jpg" width="300px" height="200px">
+                </div>
+             <div class=" Dep1">
+                 <p> Descripción: <br> Playera de Brasil <br><br><strong>$1,500.00</strong></p>
+                 <div class="anadir">
+                    
+                    <i class="fas fa-minus"></i>
+                    <span>1</span>
+                    <i class="fas fa-plus"></i>
+                 </div>
+                <div class=" Sacar"> 
+                    <button> Sacar del carrito</button>
+                </div>
+            </div>
+                
+        </div>
+  
+
+        <div class="Articulos">
+            <div class="producto-carrito producto-carrito2">
+                 <img src="../images/carrito/Tenisz.jpg" width="300px" height="200px">
+                 </div>
+             <div class="Dep1">
+                 <p> Descripción:<br>Tenis Nike Zoom Live II<br><br><strong>$1,600.00</strong></p>
+                 <!--Simbolos de + y - -->
+                <div class="anadir">
+                
+                    <i class="fas fa-minus"></i>
+                    <span>1</span>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="Sacar">
+                    <button> Sacar del carrito</button>
+                </div>
+             </div>
+        </div>
+
+
+    <div class="botones-finales">
+        <button class="Seguir">Seguir comprando</button>
+        <button class="pagar">Pagar</button>
+    </div>
+
+    <div class="final-footer">
+        <p class="final-text">@2018. fimasport.mx Todos los derechos reservados</p>
+        </div>
+
+</body>
+</html>

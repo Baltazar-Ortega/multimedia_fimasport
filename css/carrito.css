@@ -1,0 +1,140 @@
+/*
+colores
+verde: #3a690c
+azul: #3291da;
+
+*/
+
+.Mi{
+	margin-left: 150px;
+	
+}
+
+.Mi h1{
+    font-family: 'Exo', 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: #3291da; 
+    letter-spacing: 2px;
+}
+
+.Mi h1 strong{
+    color: #3a690c;
+}
+
+.cantArt{
+    margin-left: 150px;
+    font-size: 35px;
+    color: #3291da;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+
+.Articulos{
+	
+	text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; 
+}
+.producto-carrito{
+	margin-left: 80px;
+
+}
+
+.anadir{
+    width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    
+    margin-bottom: 20px;
+}
+
+.anadir span{
+    font-size: 25px;
+    color: #3291da;
+}
+
+.fas.fa-plus,
+.fas.fa-minus
+{
+    color: #3a690c;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    
+}
+
+.fas.fa-minus{
+   margin-left: 0;
+}
+
+.producto-carrito1 img{
+    margin-top: 20px;
+}
+
+.producto-carrito2 img{
+    margin-top: 30px;
+}
+
+.Dep1{
+	margin: 60px;
+	margin-top: 20px;
+	
+}
+
+.Dep1 p{
+    font-size: 33px;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
+
+.Sacar button{
+	background-color: red;
+    color: white;
+    padding: 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botones-finales{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.Seguir{
+    margin-left: 700px;
+    margin-right: 20px;
+	margin-bottom: 20px;
+	background-color: blue;
+    color: white;
+    padding: 12px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pagar{
+    background-color: #ce6b00;
+    color: white;
+    padding: 12px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
