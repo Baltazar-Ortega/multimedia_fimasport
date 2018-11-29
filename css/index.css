@@ -26,7 +26,7 @@ figure{
 
 .header {
     /*height: 400px;*/
-    /*width: 100vw;*/
+    width: 100vw;
 }
 
 .header-1{
@@ -563,7 +563,29 @@ figure{
 }
 
 
+@media screen and (max-width: 1201px){
+    .fas.fa-map-marker-alt{
+        margin-left:0;
+    }
+    #fimasport{
+        margin-right: 20px;
+    }
+    .fas.fa-search{
+        margin-left: 0;
+    }
+    .container{
+        width: inherit;
+        max-width: 1200px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
 
+@media screen and (max-width: 937px){
+    .link.link-blog{
+        margin-left: 0;
+    }
+}
 
 
 

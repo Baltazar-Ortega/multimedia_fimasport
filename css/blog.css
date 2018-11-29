@@ -126,8 +126,12 @@
 
 /* Entradas del blog */
 
-.row1,
-.row2{
+.entradasBlog{
+    width: 100vw;
+    display: block;
+}
+
+.row1{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -136,6 +140,7 @@
             justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .article{
@@ -154,6 +159,7 @@
             align-items: center;
     
     padding: 13px;
+    width: 30%;
 }
 
 .article-heading{
@@ -169,6 +175,34 @@
     text-align: center;
     margin-top: 0;
 }
+
+@media screen and (max-width: 1201px){
+    .article{
+        width: 44%;
+    }
+    .article p{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .article img{
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width: 937px){
+    .article{
+        width: 100%;
+    }
+    .article p{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .article img{
+        width: 70vw;
+    }
+}
+
+
 
 
 
