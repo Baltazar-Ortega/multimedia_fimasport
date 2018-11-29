@@ -5,7 +5,7 @@
 
 .hero-container{
     margin: 0;
-    width: 99vw;
+    width: 100vw;
     height: 500px;
     background-image: url('../images/blog/hero.jpg');
     background-repeat: no-repeat;
