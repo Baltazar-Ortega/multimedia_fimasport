@@ -5,10 +5,45 @@ azul: #3291da;
 
 */
 
+/*+++++++++++++++Sacado del font de icomoon */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?y0x07p');
+  src:  url('../fonts/icomoon.eot?y0x07p#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?y0x07p') format('truetype'),
+    url('../fonts/icomoon.woff?y0x07p') format('woff'),
+    url('../fonts/icomoon.svg?y0x07p#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e900";
+}
+
+/*++++++++++++++++++++++++++++++++*/
+
 
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    width: 100vw;
 }
 
 ol, ul {
@@ -20,6 +55,23 @@ ol, ul {
 figure{
     margin: 0;
     display: inline;
+}
+
+.burger-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* 20px */
+    background-color: rgba(0, 0, 0, .7);
+    display: none; /* para que se pueda cambiar su ancho y alto*/
+    /* Se puede usar flex, pero queremos aprender cosas nuevas */
+    line-height: 40px; /* Lo pone en el centro verticalmente */
+    text-align: center; /* Lo pone en el centro horizontalmente */
+
+    color: #3a690c;
+}
+
+.menuCategorias{
+    display: none;
 }
 
 /* HEADER */
@@ -98,6 +150,11 @@ figure{
     position: absolute;
     top: 17px;
     left: 0;
+    
+}
+.logo img{
+    max-width: 100px;
+    width: 100%;
 }
 
 .fimasportHeader a{
@@ -577,6 +634,7 @@ figure{
 }
 
 
+
 @media screen and (max-width: 1201px){
     .fas.fa-map-marker-alt{
         margin-left:0;
@@ -594,9 +652,13 @@ figure{
         margin-left: 0;
         margin-right: 0;
     }
+    
 }
 
 @media screen and (max-width: 937px){
+    .burger-button{
+        display: block;
+    }
     .link.link-blog{
         margin-left: 0;
     }
@@ -611,7 +673,7 @@ figure{
     }
     .fimasportHeader2{
         text-align: center;
-        margin-bottom: 34px;
+        margin-bottom: 15px;
     }
     .fimasportHeader2 a,
     .fas.fa-search
@@ -633,9 +695,115 @@ figure{
     .fimasportHeader a h1{
         margin-top: 20px;
     }
+    /*.menu{
+        display: none;
+    }*/
+    .link.link-blog{
+        display: inline !important;
+    }
+    .header-2{
+        text-align: center;
+        
+    }
+    .header-2 .menuCategorias{
+        display: inline-block ;
+    }
+    
+    
+    .menuCategoriasTitle{
+        text-transform: unset;
+        color: #3291da;
+    }
+    .menuCategoriasTitle:active{
+        text-decoration: underline;
+        
+    }
+    .menu{
+        position: fixed;
+        background: rgba(100, 231, 139, 0.9);
+        z-index: 3;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        bottom: 0; /*Estirar hacia abajo */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*display: block;*/
+        margin: 0;
+        transition: .3s;
+     }
+     .menu ul{
+         display: block;
+     }
+     .menu.is-active{
+         left: 0;
+     }
+     .header-2 ul li {
+        display: block;
+        height: 2em;
+        color: white;
+        margin-top: .9em;
+    }
+    .link.link-blog{
+        margin-right: 0;
+    }
+    .burger-button{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%; /* 20px */
+        background-color: rgba(0, 0, 0, .7);
+        display: block; /* para que se pueda cambiar su ancho y alto*/
+        /* Se puede usar flex, pero queremos aprender cosas nuevas */
+        line-height: 40px; /* Lo pone en el centro verticalmente */
+        text-align: center; /* Lo pone en el centro horizontalmente */
+        position: fixed; /*actua como el absolute*/
+        z-index: 4;
+        left: 5px;
+        top: 5px;
+        color: white;
+        transition: .3s;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .header-3{
+        display: block;
+        height: auto;
+    }
+    .ad-title{
+        text-align: center;
+        display: block;
+    }
+    .ad-link{
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+    .fimasportHeader{
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        width: auto;
+        top: 18px;
+    }
+    .principalimg{
+        width: 100%;
+        max-width: 100px;
+        height: 50%;
+    }
+    #fimasport{
+        font-size: 2.9em;
+    }
     
 }
 
+@media screen and (max-width: 320px){
+     #fimasport{
+        font-size: 2.8em;
+    }
+}
 
 
 
