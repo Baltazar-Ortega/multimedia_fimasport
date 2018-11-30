@@ -42,8 +42,11 @@ azul: #3291da;
 
 body{
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 ol, ul {
