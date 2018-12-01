@@ -49,6 +49,8 @@ azul: #3291da;
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 50px;
+    flex-wrap: wrap;
+    
 }
 
 .info-sucursal iframe{
@@ -68,6 +70,8 @@ azul: #3291da;
 .sucursal img{
     border-radius: 10px;
     margin: auto 0;
+    max-width: 625px;
+    height: auto;
 }
 
 .ubicacion-img{
@@ -75,7 +79,24 @@ azul: #3291da;
 }
 
 
+@media screen and (max-width: 1100px){
+    .sucursal{
+        justify-content: center;
+    }
+    .info-sucursal{
+        margin-bottom: 2.5em;
+    }
+    .ubicacion-container{
+        margin-right: 0;
+    }
+}
 
+@media screen and (max-width: 655px){
+    .sucursal img{
+        width: 100%;
+        height: auto;
+    }
+}
 
 
 

@@ -15,16 +15,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--SLIDER-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            $('.slider').bxSlider();
-        });
-    </script>
+    
+    
 </head>
 <body>
 
@@ -90,64 +82,59 @@
 
 
 
-<section>
-    
-        <h3 class="ubicacion-title"><strong>Nuestras</strong> Tiendas.</h3>
-    
-</section>
+        <section>
+            <h3 class="ubicacion-title"><strong>Nuestras</strong> Tiendas.</h3>
+        </section>
 
-<section class="ubicacion-container">
-    <div class="container">
-        <div class="sucursal">
-            <div class="info-sucursal">
-                <h3 class="sucursal-title">Sucursal Cumbres</h3>
-                <p>Paseo Oslo #190 <br> Paseo de Cumbres <br> Monterrey, Nuevo Leon</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4273.606451983053!2d-100.4124899505709!3d25.748743580954972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662973a6a73e719%3A0xcc60f23b949cff1b!2sPaseo+Oslo%2C+Cumbres+Madeira%2C+Monterrey%2C+N.L.!5e0!3m2!1ses-419!2smx!4v1541894167583"
-                    width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-            
-            <img class="ubicacion-img" src="../images/ubicacion/cumbres.jpg" alt="Interior Cumbres" width="600px" height="350px">
-        </div>
-        <div class="sucursal">
-            <div class="info-sucursal">
-                <h3 class="sucursal-title">Matriz</h3>
+    <section class="ubicacion-container">
+        <div class="container">
+            <div class="sucursal">
+                <img class="ubicacion-img" src="../images/ubicacion/cumbres.jpg" alt="Interior Cumbres">
+                <div class="info-sucursal">
+                    <h3 class="sucursal-title">Sucursal Cumbres</h3>
+                    <p>Paseo Oslo #190 <br> Paseo de Cumbres <br> Monterrey, Nuevo Leon</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4273.606451983053!2d-100.4124899505709!3d25.748743580954972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662973a6a73e719%3A0xcc60f23b949cff1b!2sPaseo+Oslo%2C+Cumbres+Madeira%2C+Monterrey%2C+N.L.!5e0!3m2!1ses-419!2smx!4v1541894167583"
+                        width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <img class="ubicacion-img" src="../images/ubicacion/matriz.jpg" alt="Interior Matriz">
+                <div class="info-sucursal">
+                    <h3 class="sucursal-title">Matriz</h3>
                 
-                <p>Av. Pedro de Alba s/n <br>Ciudad Universitaria, San Nicolás <br> de los Garza, Nuevo Leon</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1797.1985083284314!2d-100.31650670308422!3d25.724381227080535!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866295850a360f43%3A0x52c625eb2f470c10!2sFacultad+de+Ciencias+Qu%C3%ADmicas+UANL!5e0!3m2!1ses-419!2smx!4v1541893846712"
-                    width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <p>Av. Pedro de Alba s/n <br>Ciudad Universitaria, San Nicolás <br> de los Garza, Nuevo Leon</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1797.1985083284314!2d-100.31650670308422!3d25.724381227080535!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866295850a360f43%3A0x52c625eb2f470c10!2sFacultad+de+Ciencias+Qu%C3%ADmicas+UANL!5e0!3m2!1ses-419!2smx!4v1541893846712"
+                        width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
             </div>
             
-            <img class="ubicacion-img" src="../images/ubicacion/matriz.jpg" alt="Interior Matriz" width="600px" height="350px">
         </div>
-    </div>
-    
-</section>
+        
+    </section>
 
     <div class="final-footer">
         <p class="final-text">@2018. fimasport.mx Todos los derechos reservados</p>
     </div>
 
-<script>
-    const menu = document.querySelector('.menu');
-    const categorias = document.querySelector('.menuCategoriasTitle');
-    const burgerButton = document.querySelector('#burger-menu');
-    burgerButton.style.display = "none";
-
-    categorias.addEventListener('click', clickaCategorias);
-
-    burgerButton.addEventListener('click', clickaBurger);
-
-    function clickaCategorias() {
-        menu.classList.add('is-active');
-        burgerButton.style.display = "block";
-    }
-    function clickaBurger() {
-        menu.classList.remove('is-active');
+    <script>
+        const menu = document.querySelector('.menu');
+        const categorias = document.querySelector('.menuCategoriasTitle');
+        const burgerButton = document.querySelector('#burger-menu');
         burgerButton.style.display = "none";
-    }
+
+        categorias.addEventListener('click', clickaCategorias);
+
+        burgerButton.addEventListener('click', clickaBurger);
+
+        function clickaCategorias() {
+            menu.classList.add('is-active');
+            burgerButton.style.display = "block";
+        }
+        function clickaBurger() {
+            menu.classList.remove('is-active');
+            burgerButton.style.display = "none";
+        }
 
 
 
-</script>
+    </script>
 </body>
 </html>
