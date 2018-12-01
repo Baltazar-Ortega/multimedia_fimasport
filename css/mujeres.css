@@ -5,9 +5,8 @@ azul: #3291da;
 
 */
 
-.bannermujer img{
-    width: 99vw;
-    
+.bannermujer{
+    display: block;
 }
 
 .mujeres-title{
@@ -26,8 +25,6 @@ azul: #3291da;
     
 }
 
-.img-prod{
-    border: 1px solid pink;
-}
+
 
 

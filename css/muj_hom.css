@@ -59,7 +59,7 @@
 
 
 .img-prod{
-    border: 1px solid blue;
+    
 }
 
 .mujhom-prod-title{
@@ -83,7 +83,11 @@
 
 @media screen and (max-width: 745px){
     .mujhom-prod-container{
-        width: 100%;
+        width: 40%;
+    }
+    .mujhom-prod-container3{
+        margin: 0 auto;
+        margin-top: 1.3em;
     }
     .mujhom-prod-title{
         text-align: center;
@@ -97,6 +101,9 @@
 }
 
 @media screen and (max-width: 480px){
+    .mujhom-prod-container{
+        width: 100%;
+    }
     .mujhom-prod-title{
         text-align: center;
         font-size: 1.6em;
