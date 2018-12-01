@@ -659,9 +659,7 @@ figure{
 }
 
 @media screen and (max-width: 937px){
-    .burger-button{
-        display: block;
-    }
+    
     .link.link-blog{
         margin-left: 0;
     }
@@ -716,6 +714,7 @@ figure{
     .menuCategoriasTitle{
         text-transform: unset;
         color: #3291da;
+        cursor: pointer;
     }
     .menuCategoriasTitle:active{
         text-decoration: underline;
@@ -762,10 +761,11 @@ figure{
         text-align: center; /* Lo pone en el centro horizontalmente */
         position: fixed; /*actua como el absolute*/
         z-index: 4;
-        left: 5px;
-        top: 5px;
+        left: 25px;
+        top: 35px;
         color: white;
         transition: .3s;
+        cursor: pointer;
     }
 }
 
@@ -773,10 +773,14 @@ figure{
     .header-3{
         display: block;
         height: auto;
+        padding-top: .3em;
+        padding-bottom: .3em;
     }
     .ad-title{
         text-align: center;
         display: block;
+        font-size: 14px;
+        margin-bottom: .2em;
     }
     .ad-link{
         display: block;
@@ -800,11 +804,20 @@ figure{
         font-size: 2.9em;
     }
     
+    
 }
 
 @media screen and (max-width: 320px){
      #fimasport{
         font-size: 2.8em;
+    }
+    .ad-title{
+        
+        font-size: 10px;
+        
+    }
+    .ad-link{
+        font-size: 13px;
     }
 }
 
