@@ -8,6 +8,10 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 40px;
+    width: 90vw;
+    flex-wrap: wrap;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 .mujhom-prod-container{
@@ -25,6 +29,7 @@
         -ms-flex-align: center;
             align-items: center;
     cursor: pointer;
+    width: 32%;
 }
 
 .mujhom-prod-price1,
@@ -61,3 +66,62 @@
     text-align: center;
     font-size: 24px;
 }
+
+@media screen and (max-width: 937px){
+    .mujhom-prod-container{
+        width: 25%;
+    }
+    .mujhom-prod-title{
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .mujhom-prod-price1,
+    .mujhom-prod-price2{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 745px){
+    .mujhom-prod-container{
+        width: 100%;
+    }
+    .mujhom-prod-title{
+        text-align: center;
+        font-size: 2em;
+    }
+    .mujhom-prod-price1,
+    .mujhom-prod-price2{
+        font-size: 2.2em;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    .mujhom-prod-title{
+        text-align: center;
+        font-size: 1.6em;
+    }
+    .mujhom-prod-price1,
+    .mujhom-prod-price2{
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .mujhom-prod-title{
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .mujhom-prod-price1,
+    .mujhom-prod-price2{
+        font-size: 1.5em;
+    }
+}
+
+
+
+
+
+
+
+

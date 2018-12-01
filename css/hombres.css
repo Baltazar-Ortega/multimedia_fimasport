@@ -1,5 +1,6 @@
-.BannerHombres img{
-    width: 99vw;
+.BannerHombres{
+    
+    display: block;
 }
 
 .hombres-title{
