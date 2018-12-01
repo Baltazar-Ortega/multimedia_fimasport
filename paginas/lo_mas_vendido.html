@@ -94,67 +94,64 @@
     <section class="mas_ven_nue_container">
         <div class="container">
             <article class="mas_ven_nue_prodcontainer">
-                <img class="img-prod" src="../images/lo_mas_vendido/adidasid.png" width="250px" height="250px">
+                <img class="img-prod" src="../images/lo_mas_vendido/adidasid.png" width="100%" height="auto">
                 <h4 class="mas_ven_nue-prodtitle">Playera Adidas Linage <br>ID Hombre</h4>
                 <p class="mas_ven_nue-price1">$699.00</p>
             </article>
             <article class="mas_ven_nue_prodcontainer">
-                <img class="img-prod" src="../images/lo_mas_vendido/adidaspredator.png" width="250px" height="250px">
+                <img class="img-prod" src="../images/lo_mas_vendido/adidaspredator.png" width="100%" height="auto">
                 <h4 class="mas_ven_nue-prodtitle">Tachones Adidas <br>Predator Tango 18.4</h4>
                 <p class="mas_ven_nue-price1">$1,099.00</p>
             </article>
             <article class="mas_ven_nue_prodcontainer">
-                <img class="img-prod" src="../images/lo_mas_vendido/nemezizmessi.png" width="250px" height="250px">
+                <img class="img-prod" src="../images/lo_mas_vendido/nemezizmessi.png" width="100%" height="auto">
                 <h4 class="mas_ven_nue-prodtitle">Tachones Adidas Nemeziz <br>Messi Tango 18.4 Joven</h4>
                 <p class="mas_ven_nue-price1">$999.00</p>
             </article>
+            <article class="mas_ven_nue_prodcontainer">
+                <img class="img-prod" src="../images/lo_mas_vendido/tankdtm.png" width="100%" height="auto">
+                <h4 class="mas_ven_nue-prodtitle">Tank Design 2 <br>Move Logo Mujer</h4>
+                <p class="mas_ven_nue-price1">$599.00</p>
+            </article>
+            <article class="mas_ven_nue_prodcontainer">
+                <img class="img-prod" src="../images/lo_mas_vendido/guantesadidas.png" width="100%" height="auto">
+                <h4 class="mas_ven_nue-prodtitle">Guantes Adidas <br>Clite Vers</h4>
+                <p class="mas_ven_nue-price1">$499.00</p>
+            </article>
+            <article class="mas_ven_nue_prodcontainer">
+                <img class="img-prod" src="../images/lo_mas_vendido/sandaliasezay.png" width="100%" height="auto">
+                <h4 class="mas_ven_nue-prodtitle">Sandalias Adidas <br>Eezay Essence</h4>
+                <p class="mas_ven_nue-price1">$549.00</p>
+            </article>
+
         </div>
     </section>
     
-        <section class="mas_ven_nue_container">
-            <div class="container">
-                <article class="mas_ven_nue_prodcontainer">
-                    <img class="img-prod" src="../images/lo_mas_vendido/tankdtm.png" width="250px" height="250px">
-                    <h4 class="mas_ven_nue-prodtitle">Tank Design 2 <br>Move Logo Mujer</h4>
-                    <p class="mas_ven_nue-price1">$599.00</p>
-                </article>
-                <article class="mas_ven_nue_prodcontainer">
-                    <img class="img-prod" src="../images/lo_mas_vendido/guantesadidas.png" width="250px" height="250px">
-                    <h4 class="mas_ven_nue-prodtitle">Guantes Adidas <br>Clite Vers</h4>
-                    <p class="mas_ven_nue-price1">$499.00</p>
-                </article>
-                <article class="mas_ven_nue_prodcontainer">
-                    <img class="img-prod" src="../images/lo_mas_vendido/sandaliasezay.png" width="250px" height="250px">
-                    <h4 class="mas_ven_nue-prodtitle">Sandalias Adidas <br>Eezay Essence</h4>
-                    <p class="mas_ven_nue-price1">$549.00</p>
-                </article>
-            </div>
-        </section>
 
     <div class="final-footer">
         <p class="final-text">@2018. fimasport.mx Todos los derechos reservados</p>
     </div>
-<script>
-    const menu = document.querySelector('.menu');
-    const categorias = document.querySelector('.menuCategoriasTitle');
-    const burgerButton = document.querySelector('#burger-menu');
-    burgerButton.style.display = "none";
-
-    categorias.addEventListener('click', clickaCategorias);
-
-    burgerButton.addEventListener('click', clickaBurger);
-
-    function clickaCategorias() {
-        menu.classList.add('is-active');
-        burgerButton.style.display = "block";
-    }
-    function clickaBurger() {
-        menu.classList.remove('is-active');
+    <script>
+        const menu = document.querySelector('.menu');
+        const categorias = document.querySelector('.menuCategoriasTitle');
+        const burgerButton = document.querySelector('#burger-menu');
         burgerButton.style.display = "none";
-    }
+
+        categorias.addEventListener('click', clickaCategorias);
+
+        burgerButton.addEventListener('click', clickaBurger);
+
+        function clickaCategorias() {
+            menu.classList.add('is-active');
+            burgerButton.style.display = "block";
+        }
+        function clickaBurger() {
+            menu.classList.remove('is-active');
+            burgerButton.style.display = "none";
+        }
 
 
 
-</script>
+    </script>
 </body>
 </html>
