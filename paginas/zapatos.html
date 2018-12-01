@@ -33,22 +33,28 @@
         <div class="container">
             <div class="header-1">
                 <!-- Parte superior-->
-                <figure class="logo">
-                    <img src="../images/LOGO.jpg" alt="logo" width="100">
-                </figure>
-                <a href="../index.html">
-                    <h1 id="fimasport"><strong>F</strong>ima<strong>S</strong>port</h1>
-                </a>
-                <a href="./ubicacion.html" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
-                <i class="fas fa-search"></i>
-                <a class="header-1-input" href="./busqueda.html"><input type="text" placeholder="Nike"
-                        style="border-radius: 5px;"></a>
-                <a href="./sesion.html" target="_blank"><i class="fa fa-user"></i></a>
-                <a href="./carrito.html"><i class="fa fa-shopping-cart"></i></a>
+                <div class="fimasportHeader">
+                    <figure class="logo">
+                        <img src="../images/LOGO.jpg" alt="logo" class="principalimg">
+                    </figure>
+                    <a href="../index.html">
+                        <h1 id="fimasport"><strong>F</strong>ima<strong>S</strong>port</h1>
+                    </a>
+                </div>
+                <div class="fimasportHeader2">
+                    <a href="./ubicacion.html" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                    <i class="fas fa-search"></i>
+                    <a class="header-1-input" href="./busqueda.html"><input type="text" placeholder="Nike" style="border-radius: 5px;"></a>
+                    <a href="./sesion.html" target="_blank"><i class="fa fa-user"></i></a>
+                    <a href="./carrito.html"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+    
             </div>
     
-            <div class="header-2">
+            <div class="header-2" id="header-2">
                 <!--Secciones principales-->
+                <i class="icon-menu burger-button menuCategorias" id="burger-menu"></i>
+                <p class="menuCategorias menuCategoriasTitle">Categorias</p>
                 <nav class="menu">
                     <ul>
                         <li class="link1">
@@ -119,6 +125,27 @@
     <div class="final-footer">
         <p class="final-text">@2018. fimasport.mx Todos los derechos reservados</p>
     </div>
+<script>
+    const menu = document.querySelector('.menu');
+    const categorias = document.querySelector('.menuCategoriasTitle');
+    const burgerButton = document.querySelector('#burger-menu');
+    burgerButton.style.display = "none";
 
+    categorias.addEventListener('click', clickaCategorias);
+
+    burgerButton.addEventListener('click', clickaBurger);
+
+    function clickaCategorias() {
+        menu.classList.add('is-active');
+        burgerButton.style.display = "block";
+    }
+    function clickaBurger() {
+        menu.classList.remove('is-active');
+        burgerButton.style.display = "none";
+    }
+
+
+
+</script>
 </body>
 </html>
