@@ -1,170 +1,4 @@
-body{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-}
 
-ol, ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-figure{
-    margin: 0;
-    display: inline;
-}
-
-/* HEADER */
-
-.header {
-    /*height: 400px;*/
-    /*width: 100vw;*/
-}
-
-.header-1{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: inherit;
-}
-
-.header-1 figure{
-    margin-left: 10px;
-}
-
-.header-1 h1{
-    display: inline-block;
-    margin-right: 150px;
-    font-size: 50px;
-    color: #3291da;
-}
-
-.header h1 strong{
-    color: #3a690c;
-}
-
-.header-1 a input {
-    height: 40px;
-    width: 300px;
-}
-
-.header-1 i{
-    font-size: 32px; 
-}
-
-.fas.fa-map-marker-alt{
-    color: red;
-    margin-left:90px;
-}
-
-.fa.fa-shopping-cart,
-.fa.fa-user
-{
-    margin-right: 27px;
-    color: #3a690c;
-    cursor: pointer;
-}
-
-
-
-.fas.fa-search{
-    margin-left: 25px;
-    color: #3a690c;
-}
-
-.header-1-input{
-    margin-right: 20px;
-}
-
-.header-2{
-    font-size: 25px;
-}
-
-.menu{
-    margin-top: 20px;
-    margin-bottom: 35px;
-}
-
-.header-2 ul{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    color: #3a690c;
-}
-
-.header-2 ul li{
-    display: inline-block;
-}
-
-.link{
-    text-decoration: none;
-    color: inherit;
-}
-
-.link1{
-    margin-left: 10px;
-}
-
-.link-blog{
-    margin-right: 20px;
-    margin-left: 350px;
-    color: #b22222;
-    font-weight: bold;
-}
-
-.link-blog:hover{
-    text-decoration: underline;
-}
-
-.header-3{
-    background: black;
-    color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 30px;
-    margin: 0;
-}
-
-.ad-title{
-    display: inline;
-    margin: 0 10px;
-}
-
-.ad-link{
-    display: inline;
-}
-
-.container{
-    /*border: 1px solid red;*/
-    width: 1200px;
-    margin: 0 auto;
-    display: inherit;
-    -webkit-box-pack: inherit;
-        -ms-flex-pack: inherit;
-            justify-content: inherit;
-    -webkit-box-align: inherit;
-        -ms-flex-align: inherit;
-            align-items: inherit;
-    height: inherit;
-    -ms-flex-wrap: inherit;
-        flex-wrap: inherit;
-}
 
 /* HERO */
 .hero{
@@ -176,7 +10,7 @@ figure{
         -ms-flex-pack: justify;
             justify-content: space-between;
     
-    padding: 20px;
+    padding: 0;
 }
 
 .hero-menu{
@@ -213,7 +47,7 @@ figure{
 .hero-title{
     color: #3a690c;
     font-size: 45px;
-    
+    padding-left: 1em;
 }
 
 .hero-title strong{
@@ -224,8 +58,7 @@ figure{
 
 
 
-.row1,
-.row2{
+.row1{
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -234,6 +67,7 @@ figure{
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .articulo{
@@ -249,6 +83,7 @@ figure{
             align-items: center;
     color: #7a7575;
     cursor: pointer;
+    width: 25%;
 }
 
 
@@ -303,6 +138,9 @@ figure{
     margin-bottom: 15px;
 }
 
+.container{
+    max-width: 1200px;
+}
 
 /* FOOTER */
 .final-footer{
@@ -317,5 +155,63 @@ figure{
     margin-top: 0;
     margin-bottom: 0;
 }
+
+@media screen and (max-width: 865px){
+    .articulo{
+        width: 40%;
+        margin-bottom: 10px;
+        flex: 1;
+    }
+    
+    .final-button{
+        font-size: 1.3em;
+    }
+}
+
+
+
+@media screen and (max-width: 520px){
+    .articulo{
+        width: 100%;
+        flex: 0 1 auto;
+    }
+    .hero{
+        display: block;
+        text-align: center;
+    }
+    .hero-menu{
+        display: none;
+    }
+    .articulo h4{
+        font-size: 2em;
+    }
+    .last-price{
+        font-size: 1.5em;
+    }
+    .new-price{
+        font-size: 2.3em;
+    }
+    .final-button{
+        font-size: 1.7em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
