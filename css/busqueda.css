@@ -17,11 +17,11 @@ azul: #3291da;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 99vw;
+    width: 100vw;
 }
 
 .busqueda-filtros{
-    width: 400px;
+    width: 20vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -55,7 +55,7 @@ azul: #3291da;
 
 
 .busqueda-productos{
-    width: 1100px;
+    width: 80vw;
 }
 
 
@@ -93,25 +93,29 @@ br{
 }
 
 
-.row1,
-.row2{
+.row1{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    
+    flex-wrap: wrap;
 }
 
 .articulo{
-    
+    width: 30%;
     cursor: pointer;
 }
 
 .articulo h5{
     color: #594f4f;
     font-size: 26px;
+}
+
+.articulo img{
+    width: 100%; 
+    height: auto;
 }
 
 .search{
@@ -150,6 +154,7 @@ br{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-right: 50px;
 }
 
 .hero-ul{
@@ -188,3 +193,85 @@ br{
     margin-top: 0;
     margin-bottom: 0;
 }
+
+@media screen and (max-width: 937px){
+    .articulo{
+        width: 50%;
+    }
+    .articulo h5,
+    .articulo p{
+        text-align: center;
+    }
+    .filtros-subtitles li{
+        font-size: .6em;
+    }
+    .busqueda-title-container h2{
+        padding-left: 10px;
+    }
+    .busqueda-title-container p{
+        font-size: 1.5em;
+    }
+    .filtros-title{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 690px){
+    .busqueda-filtros{
+        display: none;
+    }
+    .busqueda-productos{
+        width: 100vw;
+    }
+    .hero-menu{
+        margin: 0 auto;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .articulo{
+        width: 100%;
+    }
+    .articulo h5{
+        margin-top: 0;
+    }
+    .articulo h5,
+    .articulo p{
+        font-size: 2em;
+    }
+    .busqueda-title-container p{
+        font-size: 1em;
+        margin-right: 0;
+    }
+    .articulo{
+        height: 60%;
+    }
+    .articulo img{
+        
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .articulo h5,
+    .articulo p{
+        font-size: 1.5em;
+    }
+    .hero-menu li{
+        font-size: 1.5em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
