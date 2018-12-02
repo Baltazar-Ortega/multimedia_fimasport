@@ -23,12 +23,20 @@ azul: #3291da;
 .producto2{
 
     margin-right: 100px;
+	margin-top: 2em;
+}
 
+.producto2 h3{
+	text-align: center;
 }
 
 .producto1{
 	margin-right: 100px;
 	margin-left: 120px;
+}
+
+.producto1 h3{
+	text-align: center;
 }
 
 .producto3{
@@ -149,11 +157,26 @@ azul: #3291da;
 
 .Messi{
 	margin-top: 50px;
-	margin-right: 170px;
+	width: 40%;
 	margin-bottom: 70px;
 }
+
+.messi-img{
+	width: 100%;
+}
+
+.tenis-img{
+	width: 100%;
+}
+
 .Compra h1{
 	font-size: 40px;
+}
+
+.Compra{
+	width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .precio-messi{
@@ -168,7 +191,10 @@ azul: #3291da;
 		margin-right: 0;
 		margin-top: 2em;
 	}
-	
+	.producto1,
+	.producto2{
+		width: 30%;
+	}
 	.productos{
 		justify-content: center;
 	}
@@ -188,14 +214,52 @@ azul: #3291da;
 	}
 }
 
+@media screen and (max-width: 798px){
+	.futProd{
+		width: 100%;
+	}
+	.producto1{
+		margin-bottom: 2em;
+	}
+	.producto2{
+		margin-right: 0;
+		margin-bottom: 2em;
+	}
+}
+
 @media screen and (max-width: 700px){
 	.Fondo{
 		background-position-y: -50px;
 		
 	}
+	.Compra h1{
+		font-size: 1.4em;
+	}
+	.futProd{
+		font-size: 1.6em;
+	}
+	.producto1 p{
+		text-align: center;
+	}
 }
 
+@media screen and (max-width: 550px){
+	.futProd{
+		font-size: 1.2em;
+	}
+}
 
+@media screen and (max-width: 320px){
+	.Compra h1{
+		font-size: 1.1em;
+	}
+	.futProd{
+		font-size: .9em;
+	}
+	.futProd p{
+		font-size: 1.5em;
+	}
+}
 
 
 
