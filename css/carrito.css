@@ -36,10 +36,16 @@ azul: #3291da;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; 
+    flex-wrap: wrap;
 }
 .producto-carrito{
 	margin-left: 80px;
 
+}
+
+.imagen{
+    max-width: 300px;
+    height: 200px;
 }
 
 .anadir{
@@ -112,10 +118,11 @@ azul: #3291da;
 .botones-finales{
     margin-top: 50px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .Seguir{
-    margin-left: 700px;
+    
     margin-right: 20px;
 	margin-bottom: 20px;
 	background-color: blue;
@@ -138,3 +145,59 @@ azul: #3291da;
     border-radius: 10px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 800px){
+    .Dep1{
+        width: 100%;
+        text-align: center;
+    }
+    .anadir{
+        margin: 0 auto;
+        padding-left: 30%;
+        justify-content: center;
+        padding-left: 0;
+    }
+    .producto-carrito{
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+    .Mi,
+    .cantArt{
+        margin-left: 0;
+        text-align: center;
+    }
+    .Sacar{
+        margin-top: 2.1em;
+    }
+}
+
+@media screen and (max-width: 490px){
+    .Dep1{
+        margin: 0;
+        margin-bottom: 1em;
+    }
+    .Dep1 p{
+        font-size: 1.5em;
+    }
+    .botones-finales{
+        flex-wrap: wrap;
+    }
+    .anadir{
+        width: auto;
+    }
+    .Seguir{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .Dep1 p{
+        
+        font-size: 1.2em;
+    }
+}
+
+
+
+
