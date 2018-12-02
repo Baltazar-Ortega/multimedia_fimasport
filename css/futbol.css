@@ -15,7 +15,9 @@ azul: #3291da;
 	        justify-content: space-between;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
-	        align-items: center;
+			align-items: center;
+	width: 100%;
+	flex-wrap: wrap
 }
 
 .producto2{
@@ -60,6 +62,7 @@ azul: #3291da;
 	        align-items: center;
 	color: black;
 	font-size: 25px;
+	width: 20%;
 }
 
 .futProd strong{
@@ -85,9 +88,11 @@ azul: #3291da;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position-y: -350px;
+	
 }
 
 .h2{
+	
     width: inherit;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -156,5 +161,47 @@ azul: #3291da;
 	letter-spacing: 2px;
 	color: #3291da;
 }
+
+@media screen and (max-width: 1177px){
+	.producto3{
+		width: 100%;
+		margin-right: 0;
+		margin-top: 2em;
+	}
+	
+	.productos{
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 1100px){
+	.Fondo{
+		background-position-y: -250px;
+		
+	}
+}
+
+@media screen and (max-width: 900px){
+	.Fondo{
+		background-position-y: -150px;
+		
+	}
+}
+
+@media screen and (max-width: 700px){
+	.Fondo{
+		background-position-y: -50px;
+		
+	}
+}
+
+
+
+
+
+
+
+
+
 
 
