@@ -17,7 +17,7 @@ azul: #3291da;
 }
 
 .ubicacion-container{
-    margin-top: 70px;
+    
     margin-right: 40px;
 }
 
@@ -33,6 +33,7 @@ azul: #3291da;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-bottom: 120px;
 }
 
 .sucursal-title{
@@ -72,9 +73,7 @@ azul: #3291da;
     margin: auto 0;
     max-width: 625px;
     height: auto;
-}
-
-.ubicacion-img{
+    margin-top: 60px;
     margin-right: 25px;
 }
 
@@ -85,20 +84,48 @@ azul: #3291da;
     }
     .info-sucursal{
         margin-bottom: 2.5em;
+        padding-bottom: 0;
     }
     .ubicacion-container{
         margin-right: 0;
+    }
+    .ubicacion-img{
+        margin-top: 70px;
+    }
+    .ubicacion-img1{
+        margin-bottom: 70px;
+        margin-top: 70px;
+    }
+    .sucursal img{
+        margin-bottom: 20px;
     }
 }
 
 @media screen and (max-width: 655px){
     .sucursal img{
         width: 100%;
-        height: auto;
+        height: 100%;
+    }
+    .info-sucursal{
+        width: 100%;
     }
 }
 
-
+@media screen and (max-width: 320px){
+    .info-sucursal p{
+        font-size: 1em;
+    }
+    .info-sucursal h3,
+    .ubicacion-title{
+        font-size: 1.5em;
+    }
+    .ubicacion-title{
+        margin-bottom: 0;
+    }
+    .ubicacion-img1{
+        margin-top: 40px;
+    }
+}
 
 
 
