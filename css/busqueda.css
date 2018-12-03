@@ -35,6 +35,29 @@ azul: #3291da;
     padding: 10px;
 }
 
+.burgerFiltros{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* 20px */
+    background-color: rgba(58, 105, 12, .7);
+    display: none; 
+    
+    line-height: 40px; /* Lo pone en el centro verticalmente */
+    text-align: center; /* Lo pone en el centro horizontalmente */
+
+    color: white;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.burgerFiltros:active{
+    border: 3px solid #3291da;;
+}
+
+.filtrarTexto{
+    display: none;
+}
+
 .filtros-title{
     font-size: 30px;
     margin-top: 60px;
@@ -217,15 +240,58 @@ br{
 }
 
 @media screen and (max-width: 690px){
-    .busqueda-filtros{
+    /*.busqueda-filtros{
         display: none;
-    }
+    }*/
     .busqueda-productos{
         width: 100vw;
     }
     .hero-menu{
         margin: 0 auto;
         padding-right: 0;
+    }
+    .burgerFiltros{
+        display: block;
+    }
+    .busqueda-filtros{
+        position: fixed;
+        background: rgba(100, 231, 139, 0.9);
+        
+        z-index: 3;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        bottom: 0; /*Estirar hacia abajo */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*display: block;*/
+        margin: 0;
+        transition: .3s;
+     }
+     .busqueda-filtros ul{
+         display: block;
+     }
+     .filtros-subtitles{
+         color: #3291da;
+         font-weight: bold;
+     }
+     .busqueda-filtros.is-active{
+         
+         padding: 0;
+     }
+     .filtrarTexto{
+        display: initial;
+    }
+    .busqueda-title-container span{
+        color: #3291da;
+        
+    }
+    .busqueda-title-container p{
+        font-size: 1.2em;
+    }
+    .busqueda-title-container h2{
+        font-size: 1.8em;
     }
 }
 
@@ -243,6 +309,7 @@ br{
     .busqueda-title-container p{
         font-size: 1em;
         margin-right: 0;
+        justify-content: space-around;
     }
     .articulo{
         height: 60%;
@@ -250,6 +317,16 @@ br{
     .articulo img{
         
         height: 40%;
+    }
+    .busqueda-title-container p,
+    .busqueda-title-container span{
+        font-size: .7em;
+    }
+    .busqueda-title-container p{
+        padding-right: 1em;
+    }
+    .busqueda-title-container h2{
+        font-size: 1.3em;
     }
 }
 

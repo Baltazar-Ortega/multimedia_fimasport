@@ -103,6 +103,11 @@
                 <section class="busqueda-title">
                     <div class="busqueda-title-container">
                         <h2>Nike</h2>
+                        <div class="filtrosContainer">
+                            <i class="icon-menu burgerFiltros" id="burger-menu-filtros"></i>
+                            <span class="filtrarTexto">FILTRAR</span>
+                        </div>
+                            
                         <p>Mostrar 6 por pagina</p>
                     </div>
                     <hr>
@@ -203,9 +208,21 @@
         }
         function clickaBurger() {
             menu.classList.remove('is-active');
+            busquedaFiltros.style.left = "-100vw";
             burgerButton.style.display = "none";
         }
 
+        const filtrosMenu = document.querySelector('.filtros-menu');
+        const botonFiltros = document.querySelector('.burgerFiltros');
+        const busquedaFiltros = document.querySelector('.busqueda-filtros');
+        busquedaFiltros.style.padding = "0";
+        botonFiltros.addEventListener('click', clickaFiltros);
+
+        function clickaFiltros(){
+            busquedaFiltros.style.left = "0";
+            busquedaFiltros.style.padding = "0";
+            burgerButton.style.display = "block";
+        }
 
 
     </script>

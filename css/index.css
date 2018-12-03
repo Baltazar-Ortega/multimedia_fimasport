@@ -73,6 +73,7 @@ figure{
     color: #3a690c;
 }
 
+
 .menuCategorias{
     display: none;
 }
@@ -767,6 +768,7 @@ figure{
         transition: .3s;
         cursor: pointer;
     }
+    
 }
 
 @media screen and (max-width: 480px){
