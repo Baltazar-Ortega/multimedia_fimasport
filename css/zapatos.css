@@ -9,12 +9,19 @@ azul: #3291da;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex; /* Afecto a los hijos directos */
-    padding-top: 25px;
+        padding-top: 25px;
+        flex-wrap: wrap;
+        width: 100vw;
 }
 
 .Nike{
-	margin: 30px;
+	margin: 0;
+    width: 46%;
+    margin-right: 4%;
+}
 
+.Deps{
+    width: 50%;
 }
 
 .descripcion-zap{
@@ -70,6 +77,61 @@ azul: #3291da;
 .dropdown-title-color{
     margin-left: 40px;
 }
+
+.zapatoImagen{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 750px){
+    .descripcion-zap{
+        font-size: .9em;
+    }
+    .title-zap{
+        font-size: 1.5em;
+    }
+    .precio-zap{
+        font-size: 1.3em;
+    }
+    .dropdown-title{
+        font-size: 1em;
+    }
+    .Agre button{
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 585px){
+    .Nike,
+    .Deps{
+        width: 100%;
+    }
+    .Nike{
+        margin-right: 0;
+    }
+    .zapatoImagen{
+        width: 70%;
+    }
+    .descripcion-zap{
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    .Deps,
+    .Nike{
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
