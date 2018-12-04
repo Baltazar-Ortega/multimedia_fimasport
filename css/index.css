@@ -600,6 +600,7 @@ figure{
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .social-container i{
@@ -630,6 +631,7 @@ figure{
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .final-footer{
@@ -840,9 +842,9 @@ figure{
         width: 100%;
     }
     .container-img-marca{
-        width: 90%;
-        padding-right: 5%;
-        padding-left: 5%;
+        width: 80%;
+        padding-right: 10%;
+        padding-left: 10%;
     }
 }
 
@@ -880,13 +882,39 @@ figure{
     #fimasport{
         font-size: 2.9em;
     }
-    
-    
+    .fa.fa-facebook-square,
+    .fa.fa-twitter,
+    .fa.fa-whatsapp{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .contacto-tel{
+        margin-right: 5px;
+    }
+    .footer-title{
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+        text-align: center;
+    }
+    .newsletter img{
+        margin-right: 0;
+    }
+    .news-title{
+        text-align: center;
+        margin-right: 0;
+    }
+    .newsletter input{
+        width: initial;
+    }
 }
 
 @media screen and (max-width: 343px){
     .marcas-container{
         justify-content: center;
+    }
+    .h-detail{
+        display: block;
     }
 }
 
