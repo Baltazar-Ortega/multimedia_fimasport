@@ -491,20 +491,20 @@ figure{
 }
 
 /* Marcas */
+.marcas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .marcas-title{
     text-align: center;
     font-size: 33px;
     color: #3a690c;
 }
 
-.marcas-container{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    
+.container-img-marca{
+    width: 20%;
 }
 
 /* Newsletter */
@@ -520,6 +520,7 @@ figure{
             align-items: center;
     margin-top: 50px;
     margin-bottom: 60px;
+    flex-wrap: wrap;
 }
 
 .news-title{
@@ -550,6 +551,7 @@ figure{
             justify-content: center;
     margin: 0;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 .footer-col1{
@@ -657,12 +659,20 @@ figure{
         margin-left: 0;
     }
     .container{
-        
+        width: 100%;
         max-width: 1200px;
         margin-left: 0;
         margin-right: 0;
+        
     }
-    
+    .rebajas{
+        display: none;
+    }
+    .container-img-marca{
+        width: 30%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
 
 @media screen and (max-width: 1060px){
@@ -796,7 +806,9 @@ figure{
         width: 100%;
     }
     
-    
+    .footer-col1{
+        margin-right: 0;
+    }
 }
 
 @media screen and (max-width: 810px){
@@ -808,12 +820,29 @@ figure{
     }
 }
 
+@media screen and (max-width: 681px){
+    .marcas-ultimo{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 511px){
+    .marcas-ultimo{
+        margin: 0;
+    }
+}
+
 @media screen and (max-width: 560px){
     .carta{
         margin: 0 auto;
     }
     .n-v-container{
         width: 100%;
+    }
+    .container-img-marca{
+        width: 90%;
+        padding-right: 5%;
+        padding-left: 5%;
     }
 }
 
@@ -853,6 +882,12 @@ figure{
     }
     
     
+}
+
+@media screen and (max-width: 343px){
+    .marcas-container{
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 320px){
